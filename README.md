@@ -39,7 +39,7 @@ Filters customer records to include only those who have consented to share their
 
 Accelerometer Data Transformation:
 
-Script: accelerometer_landing_to_trusted_zone.py
+Script: 'accelerometer_landing_to_trusted_zone.py'
 
 Filters accelerometer readings for customers who consented to share their data, based on a join with the customer_trusted table.
 
