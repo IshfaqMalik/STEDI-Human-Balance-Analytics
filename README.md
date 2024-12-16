@@ -34,14 +34,20 @@ In the trusted zone, AWS Glue jobs are used to transform and sanitize the raw da
 Customer Data Transformation:
 
 Script: customer_landing_to_trusted.py
+
 Filters customer records to include only those who have consented to share their data for research.
+
 Accelerometer Data Transformation:
 
 Script: accelerometer_landing_to_trusted_zone.py
+
 Filters accelerometer readings for customers who consented to share their data, based on a join with the customer_trusted table.
+
 Step Trainer Data Transformation:
 
+
 Script: trainer_landing_to_trusted.py
+
 Filters Step Trainer records for customers who have accelerometer data and have consented to data sharing, using a join with the customer_curated table.
 The resulting trusted tables contain sanitized datasets for use in further analysis.
 
