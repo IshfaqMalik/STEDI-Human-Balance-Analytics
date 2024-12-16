@@ -18,3 +18,12 @@ The project utilizes three primary datasets:
 Customer Records: Collected from the STEDI website and fulfillment system.
 Step Trainer Records: Sensor data capturing object motion distance.
 Accelerometer Records: Mobile app data capturing motion in X, Y, and Z directions.
+
+# Implementation
+Landing Zone
+Raw data for customers, accelerometers, and step trainers is stored in the landing zone on AWS S3. AWS Glue Data Catalog tables are created for these datasets to enable querying via AWS Athena.
+
+## Customer Landing Table: Contains raw customer data.
+## Accelerometer Landing Table: Contains raw accelerometer data from the mobile app.
+## Step Trainer Landing Table: Contains raw Step Trainer sensor data.
+
